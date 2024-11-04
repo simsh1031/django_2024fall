@@ -3,8 +3,8 @@ from django.http import HttpResponse, Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import Course
-from .serializers import CourseSerializer
+from .models import Course, Student, Professor, Department
+from .serializers import CourseSerializer, StudentSerializer, ProfessorSerializer, DepartmentSerializer
 
 
 def home(request):
